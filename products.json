@@ -1,0 +1,84 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "black & red wallet",
+          "price": 99.00,
+          "bestseller": 1,
+          "image": { "fields": { "file": { "url": "./images/product-1.jpeg" } } },
+          "descr" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus."
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "brown & whisky wallet",
+          "price": 99.00,
+          "bestseller": 0,
+          "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } },
+          "descr" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus."
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "bisquit & olive",
+          "price": 99.00,
+          "bestseller": 1,
+          "image": { "fields": { "file": { "url": "./images/product-3.jpeg" } } },
+          "descr" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus."
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "blue & bisquit wallet",
+          "price": 99.00,
+          "bestseller": 0,
+          "image": { "fields": { "file": { "url": "./images/product-4.jpeg" } } },
+          "descr" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus."
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "olive & blue wallet",
+          "price": 99.00,
+          "bestseller": 1,
+          "image": { "fields": { "file": { "url": "./images/product-5.jpeg" } } },
+          "descr" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus."
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "bisquit & olive wallet",
+          "price": 99.00,
+          "bestseller": 0,
+          "image": { "fields": { "file": { "url": "./images/product-6.jpeg" } } },
+          "descr" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus."
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "brown & wisky wallet",
+          "price": 99.00,
+          "bestseller": 1,
+          "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } },
+          "descr" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus."
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "black & red wallet",
+          "price": 99.00,
+          "bestseller": 0,
+          "image": { "fields": { "file": { "url": "./images/product-8.jpeg" } } },
+          "descr" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, praesentium consequuntur harum ullam nam tenetur enim aliquam, a quia rem ipsam blanditiis iusto facere! Dicta error iusto perspiciatis voluptatem possimus."
+        }
+      }
+    ]
+  }
