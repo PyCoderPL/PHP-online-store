@@ -614,6 +614,7 @@ body {
 }
 .subscribe-btn {
     height: 100%;
+    width: 50%;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: bold;
@@ -625,6 +626,18 @@ body {
 .subscribe-btn:hover {
     color: white;
 }
+.subscribe-message p:first-child, p:nth-child(2) {
+    display: none;
+}
+.subscribe-message.error p:first-child {
+    display: block;
+    color: crimson;
+}
+.subscribe-message.success p:nth-child(2) {
+    display: block;
+    color: green;
+}
+
 /* ------------------- END OF OUR STORY ------------------- */
 /* ------------------- LOGIN / REGISTER FORM ------------------- */
 .login-cart-center {

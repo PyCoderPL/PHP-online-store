@@ -20,7 +20,7 @@
         $login = mysqli_real_escape_string($connection, $login);
         $password = $_POST['pass'];
 
-        $sql = sprintf("SELECT * FROM uzytkownicy WHERE user ='%s'", $login);
+        $sql = sprintf("SELECT * FROM users WHERE user ='%s'", $login);
         if ($result = @$connection->query($sql)) {
             $user_count = $result->num_rows;
             if ($user_count == 1) {

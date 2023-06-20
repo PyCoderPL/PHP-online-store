@@ -96,7 +96,7 @@
         <div class="subscribe-center">
             <h1 class="subscribe-title">subscribe and stay on top of our latest news and promotions</h1>
             <form class="input-email" action="../sources/php/PDOsubscribe.php" method="post">
-                <input type="email" name="email" placeholder="Enter your email here...">
+                <input type="email" name="email" placeholder="Enter your email here..." <?php if (isset($_SESSION['subscribe_message'])) echo "autofocus" ?>>
                 <input type="submit" value="Subscribe">
             </form>
             <div class="subscribe-message <?php if (isset($_SESSION['subscribe_message'])) {
