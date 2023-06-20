@@ -1,5 +1,5 @@
 # SimpleStorePHP
-Simple Vanilla JavaScript store + PHP. Still in progress...
+Simple Vanilla JavaScript store (HTML+CSS+JS+PHP). Still in progress...
 
 Main features:
 - get and display products from json file
