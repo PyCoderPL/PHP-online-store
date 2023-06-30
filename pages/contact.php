@@ -1,8 +1,9 @@
-<!-- <?php
-session_start(); 
-?>   -->
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,21 +20,22 @@ session_start();
     <script src="../main.js" type="module" defer></script>
     <title>Handmade Leather Goods</title>
 </head>
-<body>  
+
+<body>
     <!-- navbar -->
     <nav class="nav-bar">
         <div class="nav-bar-head-center">
             <!-- search-bar input -->
             <div class="nav-search-bar">
                 <!-- <input class="search-bar-input" type="text" placeholder="Search..." autocomplete="off"> -->
-            </div>            
+            </div>
             <!-- brand name & logo -->
             <div class="nav-brand-logo">
                 <img src="../images/logo.svg" alt="logo origami bird" />
                 <h1>
                     <span>CUT & STITCH</span>
                     <span>by hand</span>
-                </h1>                
+                </h1>
             </div>
             <div class="nav-social-login-cart">
                 <!-- social media links -->
@@ -68,7 +70,7 @@ session_start();
             </ul>
         </div>
     </nav>
-    <!-- end of navbar -->     
+    <!-- end of navbar -->
     <!-- contact form -->
     <section class="contact-section">
         <div class="contact-left">
@@ -108,7 +110,7 @@ session_start();
     <!-- end of subscribe -->
     <!-- log in cart -->
     <div class="login-cart-center">
-    <!-- <div class="login-cart-center <?php if (isset($_SESSION['error'])) echo $_SESSION['show']?>" <?php if (isset($_SESSION['logged'])) echo "data-logged=true"?>> -->
+        <!-- <div class="login-cart-center <?php if (isset($_SESSION['error'])) echo $_SESSION['show'] ?>" <?php if (isset($_SESSION['logged'])) echo "data-logged=true" ?>> -->
         <span class="login-close">
             <i class="fas fa-window-close"></i>
         </span>
@@ -119,7 +121,7 @@ session_start();
                 <label for="pass">Password</label>
                 <input type="password" name="pass" placeholder="type your password">
                 <input type="submit" value="Log in">
-                <!-- <?php if (isset($_SESSION['error'])) echo $_SESSION['error']?> -->
+                <!-- <?php if (isset($_SESSION['error'])) echo $_SESSION['error'] ?> -->
             </form>
         </div>
         <div class="register">
@@ -163,14 +165,15 @@ session_start();
             </div>
             <div class="cart-footer">
                 <h3>
-                    your total: $ 
+                    your total: $
                     <span class="cart-total">0</span>
                 </h3>
                 <button class="clear-cart banner-btn">clear cart</button>
             </div>
         </div>
     </div>
-    <!-- end of shopping cart -->    
+    <!-- end of shopping cart -->
 
 </body>
+
 </html>

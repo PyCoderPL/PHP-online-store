@@ -1,8 +1,9 @@
 <?php
-        session_start(); 
-?>  
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,7 @@
     <script src="../main.js" type="module" defer></script>
     <title>Handmade Leather Goods</title>
 </head>
+
 <body>
     <!-- navbar -->
     <nav class="nav-bar">
@@ -26,14 +28,14 @@
             <!-- search-bar input -->
             <div class="nav-search-bar">
                 <!-- <input class="search-bar-input" type="text" placeholder="Search..." autocomplete="off"> -->
-            </div>            
+            </div>
             <!-- brand name & logo -->
             <div class="nav-brand-logo">
                 <img src="../images/logo.svg" alt="logo origami bird" />
                 <h1>
                     <span>CUT & STITCH</span>
                     <span>by hand</span>
-                </h1>                
+                </h1>
             </div>
             <div class="nav-social-login-cart">
                 <!-- social media links -->
@@ -68,24 +70,24 @@
             </ul>
         </div>
     </nav>
-    <!-- end of navbar --> 
+    <!-- end of navbar -->
     <!-- our story -->
     <section class="our-story">
         <!-- our story -->
-        <img class="" src="../images/product-1.jpeg" alt="product" >
+        <img class="" src="../images/product-1.jpeg" alt="product">
         <article class="description">
             <h3 class="">Hello! My name is Martin.</h3>
             <h4 class="">About "CUT & STITCH by hand" store</h4>
             <p class="">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil neque, error quisquam a dolorum harum veniam fuga eligendi dolor repudiandae corporis esse similique aperiam aspernatur, deleniti, provident at dicta!
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil neque, error quisquam a dolorum harum veniam fuga eligendi dolor repudiandae corporis esse similique aperiam aspernatur, deleniti, provident at dicta!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil neque, error quisquam a dolorum harum veniam fuga eligendi dolor repudiandae corporis esse similique aperiam aspernatur, deleniti, provident at dicta!        
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil neque, error quisquam a dolorum harum veniam fuga eligendi dolor repudiandae corporis esse similique aperiam aspernatur, deleniti, provident at dicta!
             </p>
             <a href="./shopall.php">
                 <button class="quick-view-cart-btn">
                     <i class="fas fa-shopping-cart"></i>
                     View collection
-                </button>                
+                </button>
             </a>
         </article>
         <!-- end of our story -->
@@ -100,11 +102,11 @@
                 <input type="submit" value="Subscribe">
             </form>
             <div class="subscribe-message <?php if (isset($_SESSION['subscribe_message'])) {
-                    echo $_SESSION['subscribe_message'];
-                    unset($_SESSION['subscribe_message']);
-                } else {
-                    "";
-                } ?>">
+                                                echo $_SESSION['subscribe_message'];
+                                                unset($_SESSION['subscribe_message']);
+                                            } else {
+                                                "";
+                                            } ?>">
                 <p>Your email is incorrect or already exists!</p>
                 <p>Thank you for subscribing.</p>
             </div>
@@ -112,7 +114,7 @@
     </section>
     <!-- end of subscribe -->
     <!-- log in cart -->
-    <div class="login-cart-center <?php if (isset($_SESSION['error'])) echo $_SESSION['show']?>" <?php if (isset($_SESSION['logged'])) echo "data-logged=true"?>>
+    <div class="login-cart-center <?php if (isset($_SESSION['error'])) echo $_SESSION['show'] ?>" <?php if (isset($_SESSION['logged'])) echo "data-logged=true" ?>>
         <span class="login-close">
             <i class="fas fa-window-close"></i>
         </span>
@@ -123,7 +125,7 @@
                 <label for="pass">Password</label>
                 <input type="password" name="pass" placeholder="type your password">
                 <input type="submit" value="Log in">
-                <?php if (isset($_SESSION['error'])) echo $_SESSION['error']?>
+                <?php if (isset($_SESSION['error'])) echo $_SESSION['error'] ?>
             </form>
         </div>
         <div class="register">
@@ -167,14 +169,15 @@
             </div>
             <div class="cart-footer">
                 <h3>
-                    your total: $ 
+                    your total: $
                     <span class="cart-total">0</span>
                 </h3>
                 <button class="clear-cart banner-btn">clear cart</button>
             </div>
         </div>
     </div>
-    <!-- end of shopping cart -->    
+    <!-- end of shopping cart -->
 
 </body>
+
 </html>
