@@ -36,7 +36,7 @@ class QuickViewModal {
         let result = `<span class="quick-view-close">
         <i class="fas fa-window-close"></i>
         </span>
-        <img class="" src=.${data.image} alt="product">
+        <img class="" src=${data.image} alt="product">
         <article class="quick-view">
         <h3 class="">${data.title}</h3>
         <h4 class="">$${data.price}</h4>

@@ -6,7 +6,7 @@
 //get file name
 let fileName = location.href.split('/').slice(-1);
 fileName = fileName[0];
-let directory = fileName === 'index.php' || fileName === "" ? 'products.json' : '../products.json';
+let directory = './data/products.json';
     
 // get products
 class Products {

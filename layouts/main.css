@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* root variables */
+:root {
+    --orangeLite: #f09d51;
+    --zIndexNavBar: 1;
+    --zIndexHideOverlay: -1;
+    --zIndexShowOverlay: 100;
+    --zIndexShowQuickView: 200;
+}
+/* reset default style */
+*, ::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+a {
+    all: unset;
+    cursor: pointer;
+}
+body {
+    font-family: 'Sen', sans-serif;
+    /* font-family: 'Monteserrat', sans-serif; */
+    background: white;
+    color: black;
+}

@@ -5,19 +5,34 @@ session_start();
 <html lang="en">
 
 <head>
+    <!-- <base href="/simplestore/" /> -->
+    <base href="http://simplestore.server054599.nazwa.pl/" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS link -->
-    <link rel="stylesheet" href="../style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./layouts/navbar.css">
+    <link rel="stylesheet" href="./layouts/hero.css">
+    <link rel="stylesheet" href="./layouts/products.css">
+    <link rel="stylesheet" href="./layouts/cart.css">
+    <link rel="stylesheet" href="./layouts/register.css">
+    <link rel="stylesheet" href="./layouts/ourstory.css">
+    <link rel="stylesheet" href="./layouts/contact.css">
+    <link rel="stylesheet" href="./layouts/newsletter.css">
     <!-- Logo link -->
-    <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <link rel="icon" type="image/x-icon" href="./images/logo.svg">
     <!-- Contentful JS script -->
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <!-- JS script link -->
-    <script src="../main.js" type="module" defer></script>
+    <script src="./main.js" type="module" defer></script>
     <title>Handmade Leather Goods</title>
 </head>
 
@@ -31,7 +46,7 @@ session_start();
             </div>
             <!-- brand name & logo -->
             <div class="nav-brand-logo">
-                <img src="../images/logo.svg" alt="logo origami bird" />
+                <img src="./images/logo.svg" alt="logo origami bird" />
                 <h1>
                     <span>CUT & STITCH</span>
                     <span>by hand</span>
@@ -62,11 +77,11 @@ session_start();
         <!-- main menu categories -->
         <div class="nav-bar-menu-center">
             <ul class="nav-menu">
-                <li class="active"><a href="../index.php">Home</a></li>
-                <li><a href="./shopall.php">Shop all</a></li>
-                <li><a href="./ourstory.php">Our Story</a></li>
+                <li class="active"><a href="./index.php">Home</a></li>
+                <li><a href="./pages/shopall.php">Shop all</a></li>
+                <li><a href="./pages/ourstory.php">Our Story</a></li>
                 <!-- <li><a href="">Our Craft</a></li> -->
-                <li><a href="./contact.php">Contact</a></li>
+                <li><a href="./pages/contact.php">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -74,7 +89,7 @@ session_start();
     <!-- our story -->
     <section class="our-story">
         <!-- our story -->
-        <img class="" src="../images/product-1.jpeg" alt="product">
+        <img class="" src="./images/product-1.jpeg" alt="product">
         <article class="description">
             <h3 class="">Hello! My name is Martin.</h3>
             <h4 class="">About "CUT & STITCH by hand" store</h4>
@@ -83,7 +98,7 @@ session_start();
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil neque, error quisquam a dolorum harum veniam fuga eligendi dolor repudiandae corporis esse similique aperiam aspernatur, deleniti, provident at dicta!
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis nihil neque, error quisquam a dolorum harum veniam fuga eligendi dolor repudiandae corporis esse similique aperiam aspernatur, deleniti, provident at dicta!
             </p>
-            <a href="./shopall.php">
+            <a href="./pages/shopall.php">
                 <button class="quick-view-cart-btn">
                     <i class="fas fa-shopping-cart"></i>
                     View collection
@@ -97,9 +112,9 @@ session_start();
     <section class="subscribe-section">
         <div class="subscribe-center">
             <h1 class="subscribe-title">subscribe and stay on top of our latest news and promotions</h1>
-            <form class="input-email" action="../sources/php/PDOsubscribe.php" method="post">
-                <input type="email" name="email" placeholder="Enter your email here..." <?php if (isset($_SESSION['subscribe_message'])) echo "autofocus" ?>>
-                <input type="submit" value="Subscribe">
+            <form class="input-email" action="./sources/php/PDOsubscribe.php" method="post">
+                <input type="text" placeholder="Enter your email here...">
+                <button class="subscribe-btn">Subscribe</button>
             </form>
             <div class="subscribe-message <?php if (isset($_SESSION['subscribe_message'])) {
                                                 echo $_SESSION['subscribe_message'];
@@ -119,7 +134,7 @@ session_start();
             <i class="fas fa-window-close"></i>
         </span>
         <div class="login">
-            <form action="../sources/php/login.php" method="POST" class="login-form">
+            <form action="./sources/php/login.php" method="POST" class="login-form">
                 <label for="login">Login</label>
                 <input type="text" name="login" placeholder="type your login">
                 <label for="pass">Password</label>

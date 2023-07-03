@@ -10,7 +10,7 @@ const displayProducts = (products) => {
             <!-- single product -->
             <article class="product ${product.bestseller ? "best-seller" : ""}" data-active>
                 <div class="img-container">
-                    <img class="product-img" src=.${product.image} alt="product">
+                    <img class="product-img" src=${product.image} alt="product">
                     <button class="cart-btn" data-id=${product.id}>
                         <i class="fas fa-shopping-cart"></i>
                         add to cart

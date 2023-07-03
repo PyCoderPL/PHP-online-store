@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import url('./main.css');
+/* ------------------- LOGIN / REGISTER FORM ------------------- */
+.login-cart-center {
+    display: none;
+    position: fixed;
+    z-index: var(--zIndexShowQuickView);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    max-width: calc(0.7 * 1170px);
+    max-height: 100%;
+    gap: 2rem;
+    border-radius: 0.25rem;
+    padding: 2rem;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow-y: auto;
+}
+.login-cart-center.show {
+    display: grid;
+}
+@media screen and (min-width: 770px) {
+    .login-cart-center {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+form input {
+    background: wheat;
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    outline: none;
+}
+form input[type=submit] {
+    height: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    padding: 0.5rem 0.75rem;
+    transition: all 0.2s ease-in-out;
+    background: var(--orangeLite);
+    cursor: pointer;
+}
+form input[type=submit]:hover {
+    color: white;
+}
+.login-close {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 8px;
+    right: 10px;
+    cursor: pointer;
+}
+/* ------------------- END LOGIN / REGISTER FORM ------------------- */

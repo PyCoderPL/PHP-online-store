@@ -5,13 +5,28 @@ session_start();
 <html lang="en">
 
 <head>
+    <!-- <base href="/simplestore/" /> -->
+    <base href="http://simplestore.server054599.nazwa.pl/" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS link -->
-    <link rel="stylesheet" href="./style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS links -->
+    <link rel="stylesheet" href="./layouts/navbar.css">
+    <link rel="stylesheet" href="./layouts/hero.css">
+    <link rel="stylesheet" href="./layouts/products.css">
+    <link rel="stylesheet" href="./layouts/cart.css">
+    <link rel="stylesheet" href="./layouts/register.css">
+    <link rel="stylesheet" href="./layouts/ourstory.css">
+    <link rel="stylesheet" href="./layouts/contact.css">
+    <link rel="stylesheet" href="./layouts/newsletter.css">
     <!-- Logo link -->
     <link rel="icon" type="image/x-icon" href="./images/logo.svg">
     <!-- JS script link -->
@@ -31,7 +46,7 @@ session_start();
             </div>
             <!-- brand name & logo -->
             <div class="nav-brand-logo">
-                <img src="images/logo.svg" alt="logo origami bird" />
+                <img src="./images/logo.svg" alt="logo origami bird" />
                 <h1>
                     <span>CUT & STITCH</span>
                     <span>by hand</span>
@@ -40,9 +55,9 @@ session_start();
             <div class="nav-social-login-cart">
                 <!-- social media links -->
                 <div class="nav-social">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/martin.leathercraft/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="./index.php" aria-label="See my facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/martin.leathercraft/" aria-label="See my instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="./index.php" aria-label="Read my twitter"><i class="fa-brands fa-twitter"></i></a>
                 </div>
                 <!-- login link -->
                 <div class="nav-login">
@@ -133,9 +148,9 @@ session_start();
         <div class="login">
             <form action="./sources/php/login.php" method="POST" class="login-form">
                 <label for="login">Login</label>
-                <input type="text" name="login" placeholder="type your login">
+                <input type="text" name="login" id="loginlogin" placeholder="type your login">
                 <label for="pass">Password</label>
-                <input type="password" name="pass" placeholder="type your password">
+                <input type="password" name="pass" id="pass" placeholder="type your password">
                 <input type="submit" value="Log in">
                 <?php if (isset($_SESSION['error'])) echo $_SESSION['error'] ?>
             </form>
@@ -143,13 +158,13 @@ session_start();
         <div class="register">
             <form action="" class="register-form">
                 <label for="name">Login</label>
-                <input type="text" name="login" placeholder="type your login">
+                <input type="text" name="login" id="loginregister" placeholder="type your login">
                 <label for="email">E-mail</label>
-                <input type="text" name="email" placeholder="type your email">
+                <input type="text" name="email" name="email" id="email" placeholder="type your email">
                 <label for="pass1">Password</label>
-                <input type="password" name="pass1" placeholder="type your password">
+                <input type="password" name="pass1" id="pass1" placeholder="type your password">
                 <label for="pass2">Password again</label>
-                <input type="password" name="pass2" placeholder="type your password again">
+                <input type="password" name="pass2" id="pass2" placeholder="type your password again">
                 <input type="submit" value="Create new account">
             </form>
         </div>

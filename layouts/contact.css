@@ -1,0 +1,54 @@
+@charset "utf-8";
+@import url('./main.css');
+/* ------------------- CONTACT FORM ------------------- */
+.contact-section {
+    display: grid;
+    width: 100%;
+    height: calc(100vh - 150px);
+    background: rgba(255, 166, 0, 0.164);
+}
+@media screen and (min-width: 750px) {
+    .contact-section {
+        grid-template-columns: 1fr 1fr;
+        height: calc(100vh - 150px);
+    }
+}
+.contact-left, .contact-right {
+    margin: auto;
+    width: 340px;
+}
+.contact-left p::first-letter {
+    text-transform: capitalize;
+}
+.contact-left p:first-child {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+.contact-left p:nth-child(2) {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+.contact-left p:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 0;
+    height: 4px;
+    width: 30px;
+    background: black;
+}
+.contact-left p:nth-child(3), p:nth-child(4) {
+    margin-bottom: 1.5rem;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-form input[name="message"] {
+    height: 10rem;
+}
+.contact-form input[type=submit] {
+    width: 50%;
+}
+/* ------------------- END OF CONTACT FORM ------------------- */

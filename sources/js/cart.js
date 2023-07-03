@@ -11,10 +11,6 @@ const cartContent = document.querySelector('.cart-content');
 const cartItems = document.querySelector('.cart-items');
 const cartTotal = document.querySelector('.cart-total');
 
-let fileName = location.href.split('/').slice(-1);
-fileName = fileName[0];
-let imagesDirectory = fileName === 'index.html' || fileName === "" ? '' : '.';
-
 // global variables after DOM loaded
 let cart = [];
 let buttonsDOM = [];
@@ -48,7 +44,7 @@ class Cart {
         const div = document.createElement('div');
         div.classList.add('cart-item');
         div.innerHTML = `
-            <img src=${imagesDirectory}${item.image} alt="product">
+            <img src=${item.image} alt="product">
             <div>
                 <h5>$${item.price}</h5>
                 <h4>${item.title}</h4>

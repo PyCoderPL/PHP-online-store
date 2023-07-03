@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import url('./main.css');
+/* ------------------- CART ------------------- */
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--zIndexHideOverlay); 
+    background: rgba(0, 0, 0, 0.4);    
+    transition: all 0.2s ease-in-out;
+    /* visibility: hidden; */
+    opacity: 0;
+}
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    transition: all 0.2s ease-in-out;
+    transform: translateX(100%);
+    background: wheat;
+    overflow: auto;
+}
+.showCart {
+    transform: translateX(0);
+}
+.transparentBcg {
+    /* visibility: visible; */
+    opacity: 1;
+    z-index: var(--zIndexShowOverlay);
+}
+/* 30% view above 768px */
+@media screen and (min-width: 768px) {
+    .cart {
+        width: 30vw;
+        min-width: 450px;
+    }
+}
+.close-cart {
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.cart h2 {
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+/* ------------------- SINGLE CART ITEM ------------------- */
+.cart-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+.cart-item img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    object-position: center;
+}
+.cart-item h4 {
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+}
+.cart-item h5 {
+    margin: 0.5rem 0;
+    letter-spacing: 0.1rem;
+}
+.item-amount {
+    text-align: center;
+}
+.remove-item {
+    color: gray;
+    cursor: pointer;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+    color: var(--orangeLite);
+    cursor: pointer;
+}
+/* ------------------- END OF SINGLE CART ITEM ------------------- */
+.cart-footer {
+    margin-top: 2rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+.cart-footer h3 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+/* ------------------- END OF CART ------------------- */
