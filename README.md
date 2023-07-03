@@ -25,4 +25,4 @@ Modules to complete:
 
 This store can be very easy fed with products from Contentful.com.
 
-Demo link: https://server054599.nazwa.pl/
+Demo link: simplestore.server054599.nazwa.pl
